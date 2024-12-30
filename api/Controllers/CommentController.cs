@@ -31,7 +31,7 @@ namespace api.Controllers
             return Ok(commentDto);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
 
         public async Task<IActionResult> GetById(int id)
         {
@@ -43,10 +43,16 @@ namespace api.Controllers
             return Ok(comment.ToCommentDto());
         }
 
-        [HttpPost("{stockId}")]
+        [HttpPost("{stockId:int}")]
 
         public async Task<IActionResult> Create([FromRoute] int stockId, CreateCommentDto createCommentDto)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             if (!await _stockRepo.StockExists(stockId))
             {
                 return BadRequest("Stock does not exist");
@@ -58,10 +64,16 @@ namespace api.Controllers
         }
 
         [HttpPut]
-        [Route("{id}")]
+        [Route("{id:int}")]
 
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCommentRequestDto updateRequestDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+
             var comment = await _commentRepo.UpdateAsync(id, updateRequestDto.ToCommentFromUpdate());
             if (comment == null)
             {
@@ -71,7 +83,7 @@ namespace api.Controllers
         }
 
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{id:int}")]
 
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
