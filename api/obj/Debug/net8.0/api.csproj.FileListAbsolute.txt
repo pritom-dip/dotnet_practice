@@ -136,3 +136,7 @@
 /Users/pritom.dip/pritom/dotnet_practice/second/api/obj/Debug/net8.0/api.pdb
 /Users/pritom.dip/pritom/dotnet_practice/second/api/obj/Debug/net8.0/api.genruntimeconfig.cache
 /Users/pritom.dip/pritom/dotnet_practice/second/api/obj/Debug/net8.0/ref/api.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
