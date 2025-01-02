@@ -140,3 +140,5 @@
 /Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/pritom.dip/pritom/dotnet_practice/second/api/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
