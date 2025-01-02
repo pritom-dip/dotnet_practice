@@ -11,6 +11,7 @@ using api.utils;
 using Microsoft.EntityFrameworkCore;
 using api.Interfaces;
 using api.helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace api.Controllers
 {
@@ -25,6 +26,7 @@ namespace api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll([FromQuery] QueryObject query)
         {
             var stocks = await _stockRepo.GetAllAsync(query);
